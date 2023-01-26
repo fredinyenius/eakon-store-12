@@ -33,7 +33,10 @@ const Header = () => {
     modal.current.classList.remove('modal--show');
   };
 
-
+  document.addEventListener('scroll', documentScroll);
+const documentScroll = () => {
+    header.current?.classList.toggle('header--scroll', window.scrollY > 0);
+  };
   document.addEventListener('scroll', documentScroll);
     return (
         <header 

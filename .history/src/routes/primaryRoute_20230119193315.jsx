@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import PrimaryLayout from "../layouts/PrimaryLayout";
-import AboutUsPage from "../pages/AboutUsPage";
 import HomePage from "../pages/HomePage";
+
 
 export const primaryRoute = createBrowserRouter([
   {
@@ -10,7 +10,7 @@ export const primaryRoute = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />
+        element: <HomePage/>
       },
       {
         path: 'productos',
@@ -22,7 +22,7 @@ export const primaryRoute = createBrowserRouter([
       },
       {
         path: 'nosotros',
-        element: <AboutUsPage />
+        element: <h1>Nosotros</h1>
       },
       {
         path: 'contacto',

@@ -12,7 +12,6 @@ const HomePage = () => {
   useEffect(() => {
     dispatch(fetchReadHeroProducts());
     dispatch(fetchReadBestSellersProducts());
-  
   }, []);
 
   return (

@@ -6,15 +6,13 @@ import yoda1 from '../../assets/image/yoda1.webp';
 const Header = () => {
 
   
-  const header = useRef();
+  onst header = useRef();
   const modal = useRef();
-  const nav = useRef();
 
   const [theme, setTheme] = useState(localStorage.getItem('theme') ?? '');
 
   const documentScroll = () => {
     header.current?.classList.toggle('header--scroll', window.scrollY > 0);
-    nav.current?.classList.toggle('nav--scroll', window.scrollY > 0);
   };
 
   const selectTheme = (e) => {
@@ -33,7 +31,10 @@ const Header = () => {
     modal.current.classList.remove('modal--show');
   };
 
-
+  document.addEventListener('scroll', documentScroll);
+const documentScroll = () => {
+    header.current?.classList.toggle('header--scroll', window.scrollY > 0);
+  };
   document.addEventListener('scroll', documentScroll);
     return (
         <header 
