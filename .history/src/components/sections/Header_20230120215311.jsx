@@ -11,10 +11,6 @@ const Header = () => {
 
   const [theme, setTheme] = useState (localStorage.getItem('theme')?? '');
   
-  const documentScroll = () => {
-    header.current?.classList.toggle('header--scroll', window.scrollY > 0);
-  };
-
   const selectTheme = (e) => { 
     document.documentElement.className = e.target.value;
     localStorage.setItem('theme', e.target.value);
@@ -31,8 +27,6 @@ const Header = () => {
     header.current.classList.remove('header--move');
     modal.current.classList.remove('modal--show');
    };
-
-   document.addEventListener('scroll' ,documentScroll);
   
     return (
         <header 
