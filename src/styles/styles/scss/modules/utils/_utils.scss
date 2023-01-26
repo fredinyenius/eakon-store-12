@@ -1,0 +1,55 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.f-direction-column {
+  flex-direction: column;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.gap-2xs {
+  gap: calc(var(--section-padding) * 0.25);
+}
+
+.gap-xs {
+  gap: calc(var(--section-padding) * 0.5);
+}
+
+.gap-sm {
+  gap: calc(var(--section-padding) * 0.75);
+}
+
+.gap-md {
+  gap: var(--section-padding);
+}
+
+.gap-lg {
+  gap: calc(var(--section-padding) * 1.25);
+}
+
+.gap-xl {
+  gap: calc(var(--section-padding) * 1.5);
+}
+
+.gap-2xl {
+  gap: calc(var(--section-padding) * 1.75);
+}
+
+.color-dark-primary {
+  color: var(--dark-primary-text-color);
+}
+
+.min-h-25vh {
+  min-height: 25vh;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}

@@ -17,6 +17,16 @@
     }
   }
 
+  &--footer {
+    @include flexbox(column, stretch, flex-start, calc(var(--section-padding) * 0.25));
+    font-size: 0.75rem;
+    font-weight: 300;
+
+    @include desktop {
+      font-size: 0.875rem;
+    }
+  }
+
   &__link {
     position: relative;
     color: var(--primary-text-color);

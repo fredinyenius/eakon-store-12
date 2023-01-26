@@ -1,0 +1,170 @@
+.section {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+
+  &:first-child {
+    padding-top: calc(var(--section-padding) * 2.5);
+  }
+
+  &:last-child {
+    padding-bottom: calc(var(--section-padding) * 2.5);
+  }
+
+  &__title {
+    position: relative;
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: var(--primary-highlight-color);
+    margin: 0;
+
+    @include desktop {
+      font-size: 2rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -0.25rem;
+      width: 4rem;
+      height: 0.125rem;
+      background-color: var(--secondary-highlight-color);
+
+      @include desktop {
+        width: 6rem;
+      }
+    }
+
+    &--xs {
+      font-size: 1.25rem;
+
+      @include desktop {
+        font-size: 1.5rem;
+      }
+
+      &::before {
+        bottom: -0.125rem;
+        width: 3rem;
+        height: 0.0625rem;
+
+        @include desktop {
+          width: 5rem;
+        }
+      }
+    }
+
+    &--sm {
+      font-size: 1.5rem;
+
+      @include desktop {
+        font-size: 1.75rem;
+      }
+
+      &::before {
+        bottom: -0.125rem;
+        width: 3rem;
+        height: 0.0625rem;
+
+        @include desktop {
+          width: 5rem;
+        }
+      }
+    }
+
+    &--lg {
+      font-size: 2rem;
+
+      @include desktop {
+        font-size: 2.25rem;
+      }
+
+      &::before {
+        bottom: -0.5rem;
+        width: 5rem;
+        height: 0.25rem;
+
+        @include desktop {
+          width: 7rem;
+        }
+      }
+    }
+
+    &--xl {
+      font-size: 2.25rem;
+
+      @include desktop {
+        font-size: 2.5rem;
+      }
+
+      &::before {
+        bottom: -0.5rem;
+        width: 5rem;
+        height: 0.25rem;
+
+        @include desktop {
+          width: 7rem;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--primary-highlight-color);
+    margin: 0;
+
+    @include desktop {
+      font-size: 1.75rem;
+    }
+
+    &--xs {
+      font-size: 1rem;
+
+      @include desktop {
+        font-size: 1.25rem;
+      }
+    }
+
+    &--sm {
+      font-size: 1.25rem;
+
+      @include desktop {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    margin: 0;
+
+    @include desktop {
+      font-size: 1rem;
+    }
+
+    &--sm {
+      font-size: 0.75rem;
+
+      @include desktop {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: shadowsBackground 1s linear 0s infinite alternate;
+
+    &--lg {
+      max-width: 448px;
+
+      @include desktop {
+        max-width: 512px;
+      }
+    }
+  }
+}
