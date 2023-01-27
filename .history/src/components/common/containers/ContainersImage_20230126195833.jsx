@@ -1,6 +1,4 @@
 import { useState } from "react";
-import yoda1 from '../../../assets/image/yoda1.webp'
-
 const ContainersImage =( { src, alt, className =''}) => {
 
     const [numberOfErrors, setNumberOfError] = useState();
@@ -12,7 +10,6 @@ const ContainersImage =( { src, alt, className =''}) => {
     };
 
     const handleErrorImg =(e) => {
-        console.log('error');
     if(numberOfErrors ===0){
         setNumberOfError(1);
         e.target.src = yoda1;
