@@ -33,17 +33,12 @@
     }
   }
 
-  &--products {
+  &--responsive-3 {
     grid-template-columns: 100%;
 
-    @include desktop {
-      grid-template-columns: 1fr 3fr;
+    @include desktop() {
+      grid-template-columns: repeat(3, 1fr);
     }
-  }
-
-  &--gallery {
-    grid-template-columns: repeat(auto-fit, min(224px, 100%));
-    justify-content: center;
   }
 
   &--footer {

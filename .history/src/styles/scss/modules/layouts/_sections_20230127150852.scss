@@ -12,7 +12,7 @@
 
   &__title {
     position: relative;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 1.75rem;
     color: var(--primary-highlight-color);
     margin: 0;
@@ -117,14 +117,6 @@
       font-size: 1.75rem;
     }
 
-    &--2xs {
-      font-size: 0.75;
-
-      @include desktop {
-        font-size: 1rem;
-      }
-    }
-
     &--xs {
       font-size: 1rem;
 
@@ -166,19 +158,11 @@
     object-fit: cover;
     animation: shadowsBackground 1s linear 0s infinite alternate;
 
-    &--hero {
+    &--lg {
       max-width: 448px;
 
       @include desktop {
         max-width: 512px;
-      }
-    }
-
-    &--product {
-      height: 256px;
-
-      @include desktop {
-        height: 320px;
       }
     }
   }

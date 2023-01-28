@@ -13,10 +13,10 @@
 .a-items-center {
   align-items: center;
 }
-
 .a-self-center {
   align-self: center;
 }
+
 
 .gap-2xs {
   gap: calc(var(--section-padding) * 0.25);
@@ -46,26 +46,14 @@
   gap: calc(var(--section-padding) * 1.75);
 }
 
+.color-dark-primary {
+  color: var(--dark-primary-text-color);
+}
+
 .min-h-25vh {
   min-height: 25vh;
 }
 
-.h-100 {
-  height: 100%;
-}
-
-.t-align-center {
-  text-align: center;
-}
-
-.mt-auto {
-  margin-top: auto;
-}
-
 .mx-auto {
   margin: 0 auto;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
