@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import LoadersModal from "../components/common/loaders/LoadersModal";
 import ServisHero from "../components/servis/ServisHero";
 import ServisMeans from "../components/servis/ServisMeans";
-import useServis from "../hooks/useServis";
+import useServis from "../hooks/useContact";
 import { fetchReadServisData } from "../redux/thunks/servisThunk";
 
 const ServisPage = () => {

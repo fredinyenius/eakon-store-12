@@ -20,7 +20,7 @@ export const primaryRoute = createBrowserRouter([
       },
       {
         path: 'servicios',
-        element: <ServisPage />
+        element: <ServisHero/>
       },
       {
         path: 'nosotros',
