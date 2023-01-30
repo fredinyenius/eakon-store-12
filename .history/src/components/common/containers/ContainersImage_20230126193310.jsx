@@ -1,5 +1,0 @@
-const ContainersImage =() => {
-    return (
-
-    );
-}
